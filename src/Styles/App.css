@@ -1,0 +1,89 @@
+.web-container {
+  width: 1440px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+@media (max-width: 426px) {
+  .web-container {
+    width: 425px;
+  }
+}
+@media (max-width: 376px) {
+  .web-container {
+    width: 375px;
+  }
+}
+
+.main-container {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: 400px;
+}
+
+/* Theme  light*/
+#light-mode {
+  background-color: var(--clr-Very-Light-Gray);
+  background-color: var(--clr-Very-Light-Grayish-Blue);
+}
+
+#light-mode .header {
+  background-size: 100% 100%;
+  background-image: url(../../assets/images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+}
+
+#light-mode .addToDo__container {
+  background-color: var(--clr-Very-Light-Gray);
+}
+
+#light-mode .list__container {
+  color: var(--clr-Very-Dark-Grayish-Blue);
+}
+
+#light-mode .list__ToDo_container {
+  background-color: var(--clr-Very-Light-Gray);
+  border-bottom: 1px solid var(--clr-Light-Grayish-Blue);
+}
+
+
+#light-mode .footer__container{
+  background-color: var(--clr-Very-Light-Gray);
+}
+
+
+/* Theme  dark*/
+#dark-mode {
+  background-color: var(--clr-Very-Dark-Blue);
+}
+
+#dark-mode .header {
+  background-size: 100% 100%;
+  background-image: url(../../assets/images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+}
+
+#dark-mode .addToDo__container {
+  background-color: var(--clr-Very-Dark-Desaturated-Blue);
+}
+
+#dark-mode .list__container {
+  background-color: var(--clr-Very-Dark-Desaturated-Blue);
+  color: var(--clr-Light-Grayish-Blue);
+}
+
+#dark-mode .list__ToDo_container {
+  background-color: var(--clr-Very-Dark-Desaturated-Blue);
+  border-bottom: 1px solid var(--clr-Dark-Grayish-Blue);
+}
+
+
+#dark-mode .footer__container{
+  background-color: var(--clr-Very-Dark-Desaturated-Blue);
+}
